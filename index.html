@@ -2,74 +2,36 @@
 <html>
 <head>
 <style>
-
-<!-- Fuck Stylesheets we raw doggin this with one(1) file for the whole shit -->
-<!-- Also Fuck Javascript all my homies HATE JS -->
-
-html { scroll-behavior: smooth; } 
-
-body {
-  background-color: lightblue;
+html {
+  scroll-behavior: smooth;
 }
 
-#MainPage {
+#section1 {
   height: 600px;
   background-color: pink;
 }
-
-.SignUpButton {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-
 
 #section2 {
   height: 600px;
   background-color: yellow;
 }
-
-
 </style>
 </head>
 <body>
 
-<h2>CSS Buttons</h2>
+<h1>Smooth Scroll</h1>
 
-<button>Default Button</button>
-
-<a href="#" class="SignUpButton">Link Button</a>
-
-<button class="SignUpButton">Button</button>
-<input type="button" class="SignUpButton" value="Input Button">
-
-
-<div class="main" id="MainPage">
+<div class="main" id="section1">
   <h2>Section 1</h2>
   <p>Click on the link to see the "smooth" scrolling effect.</p>
   <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
   <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
 </div>
 
-
 <div class="main" id="section2">
-  <h2>Section 1</h2>
-  <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#MainPage">Click Me to Smooth Scroll to Section 2 Below</a>
-  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
-</div> 
-
-
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
 
 </body>
 </html>
-
-
