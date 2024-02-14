@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
 <style>
+
+
+
+
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
-#section1 {
-  height: 600px;
-  background-color: pink;
+h1.a {font-family: "Noto Sans KR"; padding-top: 0; margin-top: 0; color: rgb(255,255,255);}
+
+
+#MainPage {
+  scroll-snap-align: start;
+  height: 767px;
+  background: linear-gradient(180deg, black 0%, #1E1E1E 57%, black 100%);
+  line-height: 1.5;
+  font-family: "Noto Sans KR";
+  margin: 0;
 }
 
-#section2 {
-  height: 600px;
-  background-color: yellow;
+
+#Page1 {
+  scroll-snap-align: start;
+  height: 932px; 
+  background: linear-gradient(180deg, black 0%, #242433 20%, #050518 36%);
+  margin: 0;
 }
+
+
+#Page2 {
+  scroll-snap-align: start;
+  height: 600px;
+  background: linear-gradient(180deg, #050518 0%, #252C30 16%, #060920 59%);
+  margin: 0;
+}
+
+#Page3 {
+  scroll-snap-align: start;
+  height: 600px;
+  background: linear-gradient(180deg, #060920 0%, #313931 17%, #000C06 37%);
+}
+
+
 </style>
 </head>
 <body>
 
-<h1>Smooth Scroll</h1>
-
-<div class="main" id="section1">
-  <h2>Section 1</h2>
+<div class="main" id="MainPage">
+  <h1 class="a">SGCC Logo</h1>
   <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <a href="#Page1">Click Me to Smooth Scroll to Section 2 Below</a>
   <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
 </div>
 
-<div class="main" id="section2">
-  <h2>Section 2</h2>
-  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+<div class="main" id="Page1">
+  <h1 class="a">실력에 상관없이 누구나.</h1>
+  <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a>
 </div>
+
+<div class="main" id="Page2">
+  <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+
+
+<div class="main" id="Page3">
+  <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+
 
 </body>
 </html>
+
