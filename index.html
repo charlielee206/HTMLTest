@@ -9,16 +9,22 @@
 
 <style>
 
-
-
+body {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
+  margin-left: 0; padding: 0;
 }
 
-p.Thicc {font-family: "Noto Sans KR"; font-weight: 400; font-size:5vh; padding-top: 0; margin-top: 0;  padding-bottom: 0; margin-bottom: 0;color: rgb(255,255,255);}
-p.Thin {font-family: "Noto Sans KR"; font-weight: 200; font-size:4.7vh; padding-top: 0; margin-top: 0; color: rgb(255,255,255);}
+
+
+pre.Thicc {font-family: "Noto Sans KR"; font-weight: 400; font-size:5vh; padding-top: 0; margin-top: 0; padding-bottom: 0; margin-bottom: 0; color: rgb(255,255,255);}
+pre.Thin {font-family: "Noto Sans KR"; font-weight: 200; font-size:3.3vh; padding-top: 0; margin-top: 0; padding-bottom: 0; margin-bottom: 0; color: rgb(255,255,255);}
+pre.Body {font-family: "Noto Sans KR"; font-weight: 100; font-size:2.5vh; padding-top: 0; margin-top: 0; color: rgb(240,240,240);}
 
 
 #MainPage {
@@ -27,7 +33,7 @@ p.Thin {font-family: "Noto Sans KR"; font-weight: 200; font-size:4.7vh; padding-
   background: linear-gradient(180deg, black 0%, #1E1E1E 57%, black 100%);
   line-height: 1.5;
   font-family: "Noto Sans KR";
-  margin: 0;
+  margin: 0; padding: 0;
 }
 
 
@@ -35,7 +41,7 @@ p.Thin {font-family: "Noto Sans KR"; font-weight: 200; font-size:4.7vh; padding-
   scroll-snap-align: start;
   height: 932px; 
   background: linear-gradient(180deg, black 0%, #242433 20%, #050518 36%);
-  margin: 0;
+  margin: 0; padding: 0;
 }
 
 
@@ -43,13 +49,14 @@ p.Thin {font-family: "Noto Sans KR"; font-weight: 200; font-size:4.7vh; padding-
   scroll-snap-align: start;
   height: 600px;
   background: linear-gradient(180deg, #050518 0%, #252C30 16%, #060920 59%);
-  margin: 0;
+  margin: 0; padding: 0;
 }
 
 #Page3 {
   scroll-snap-align: start;
   height: 600px;
   background: linear-gradient(180deg, #060920 0%, #313931 17%, #000C06 37%);
+  margin: 0; padding: 0;
 }
 
 
@@ -58,15 +65,30 @@ p.Thin {font-family: "Noto Sans KR"; font-weight: 200; font-size:4.7vh; padding-
 <body>
 
 <div class="main" id="MainPage">
-  <h1 class="Thicc">SGCC Logo</h1>
+  <pre class="Thicc">SGCC Logo</pre>
   <p>Click on the link to see the "smooth" scrolling effect.</p>
   <a href="#Page1">Click Me to Smooth Scroll to Section 2 Below</a>
   <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
 </div>
 
 <div class="main" id="Page1">
-  <p class="Thicc">실력에 상관없이 누구나.</p>
-  <p class="Thin">SGCC</p>
+  <pre class="Thicc">
+    
+    
+    실력에 상관없이 누구나.</pre>
+
+  <pre class="Thin">
+        초보자를 위한 기초 강의부터
+        숙련자를 위한 프로젝트 지원까지.
+  </pre>
+
+  <pre class="Body">
+          초보자를 위한 C, Python 강의는 학과나 실력과는 
+          상관 없이 누구나 들을 수 있습니다.
+ 
+          진행하고 싶은 프로젝트가 있다면 동아리를 통해
+          사람을 모을 수 있고, 임원진의 심사를 거쳐 애셋 및 
+          부품등의 프로젝트 지원도 가능합니다.</pre>
 
   <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a>
 </div>
