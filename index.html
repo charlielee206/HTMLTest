@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
@@ -91,6 +91,7 @@ p.Smol {font-family: "Noto Sans KR"; font-weight: 250; font-size:5vmin; padding-
   font-size:5.5vmin;
   cursor: pointer;
   display: block;
+  margin-top: 12vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -131,6 +132,34 @@ img.Logo {
   margin-right: auto;
 }
 
+.SlideShow{
+  width: 85vw;
+  height: 47.8vw;
+  background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/1.png');
+  background-size: 100% 100%;
+  margin: 100px auto;
+  animation: slide 20s infinite;
+}
+
+@keyframes slide{
+  12%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/1.png'); background-size: 100% 100%;}
+  17%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/2.png'); background-size: 100% 100%;}
+
+  28%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/2.png'); background-size: 100% 100%;}
+  33%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/3.png'); background-size: 100% 100%;}
+
+  45%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/3.png'); background-size: 100% 100%;}
+  50%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/4.png'); background-size: 100% 100%;}
+
+  61%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/4.png'); background-size: 100% 100%;}
+  66%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/5.png'); background-size: 100% 100%;}
+
+  78%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/5.png'); background-size: 100% 100%;}
+  83%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/6.jpg'); background-size: 100% 100%;}
+
+  95%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/6.jpg'); background-size: 100% 100%;}
+  100%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/1.png'); background-size: 100% 100%;}
+}
 
 
 </style>
@@ -179,6 +208,8 @@ img.Logo {
           동아리에서 희망자를 받아 같이 인디게임을 제작하는
           활동을 합니다. 또한 게임업계에 계시는 선배님들의
           조언을 받을수도 있어요.</pre>
+
+  <div class="SlideShow"></div>
   <!-- <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a> -->
 </div>
 
@@ -226,6 +257,8 @@ img.Logo {
 
         <button onclick="window.location.href='https://www.google.com';" class="TextButton">동아리 가입 폼 바로가기 ></button>
 </div>
+
+
 
 
 </body>
