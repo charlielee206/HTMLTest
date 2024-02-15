@@ -7,6 +7,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="Images/1.png" as="image"/>
+  <link rel="preload" href="Images/2.png" as="image"/>
+  <link rel="preload" href="Images/3.png" as="image"/>
+  <link rel="preload" href="Images/4.png" as="image"/>
+  <link rel="preload" href="Images/5.png" as="image"/>
+  <link rel="preload" href="Images/6.jpg" as="image"/>
+
   <!-- Fuck seperate stylesheets we raw doggin this with one(1) file boys -->
   <!-- Also FUCK javascript all my homies HATE javascript -->
 <style>
@@ -135,30 +142,31 @@ img.Logo {
 .SlideShow{
   width: 85vw;
   height: 47.8vw;
-  background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/1.png');
+  background: url('Images/1.png');
   background-size: 100% 100%;
+  border-radius: 1.5vw;
   margin: 100px auto;
   animation: slide 20s infinite;
 }
 
 @keyframes slide{
-  12%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/1.png'); background-size: 100% 100%;}
-  17%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/2.png'); background-size: 100% 100%;}
+  12%{background: url('Images/1.png'); background-size: 100% 100%;}
+  17%{background: url('Images/2.png'); background-size: 100% 100%;}
 
-  28%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/2.png'); background-size: 100% 100%;}
-  33%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/3.png'); background-size: 100% 100%;}
+  28%{background: url('Images/2.png'); background-size: 100% 100%;}
+  33%{background: url('Images/3.png'); background-size: 100% 100%;}
 
-  45%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/3.png'); background-size: 100% 100%;}
-  50%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/4.png'); background-size: 100% 100%;}
+  45%{background: url('Images/3.png'); background-size: 100% 100%;}
+  50%{background: url('Images/4.png'); background-size: 100% 100%;}
 
-  61%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/4.png'); background-size: 100% 100%;}
-  66%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/5.png'); background-size: 100% 100%;}
+  61%{background: url('Images/4.png'); background-size: 100% 100%;}
+  66%{background: url('Images/5.png'); background-size: 100% 100%;}
 
-  78%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/5.png'); background-size: 100% 100%;}
-  83%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/6.jpg'); background-size: 100% 100%;}
+  78%{background: url('Images/5.png'); background-size: 100% 100%;}
+  83%{background: url('Images/6.jpg'); background-size: 100% 100%;}
 
-  95%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/6.jpg'); background-size: 100% 100%;}
-  100%{background: url('https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/1.png'); background-size: 100% 100%;}
+  95%{background: url('Images/6.jpg'); background-size: 100% 100%;}
+  100%{background: url('Images/1.png'); background-size: 100% 100%;}
 }
 
 
