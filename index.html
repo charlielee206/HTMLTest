@@ -26,6 +26,9 @@ html {
 pre.Thicc {font-family: "Noto Sans KR"; font-weight: 450; font-size:7.3vmin; padding-top: 20vmin; margin-top: 0; padding-bottom: 3vmin; margin-bottom: 0; color: rgb(255,255,255);}
 pre.Thin {font-family: "Noto Sans KR"; font-weight: 300; font-size:4.2vmin; padding-top: 0; margin-top: 0; padding-bottom: 0; margin-bottom: 0; color: rgb(255,255,255);}
 pre.Body {font-family: "Noto Sans KR"; font-weight: 150; font-size:3.7vmin; padding-top: 0; margin-top: 0; color: rgb(240,240,240);}
+p.Smol {font-family: "Noto Sans KR"; font-weight: 250; font-size:5vmin; padding-top: 0; margin-top: 0; color: rgb(240,240,240);}
+
+
 
 /************ Background Styling ************/
 
@@ -85,11 +88,46 @@ pre.Body {font-family: "Noto Sans KR"; font-weight: 150; font-size:3.7vmin; padd
   display: inline-block;
   font-family: "Noto Sans KR"; 
   font-weight: 450; 
-  font-size:4.5vmin;
+  font-size:5.5vmin;
   cursor: pointer;
-  position: relative;
-  left: 15vw;
-  top: 12vmin;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RoundButton {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(224.19, 238.36, 255, 0.35) 100%); 
+  border: none;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.87);
+  margin-top: 10vh;
+  padding: 2.3vmin;
+  padding-left: 5vmin;
+  padding-right: 5vmin;
+  text-align: center;
+  display: inline-block;
+  font-family: "Noto Sans KR"; 
+  font-weight: 450; 
+  font-size:5vmin;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.Centre {
+  margin: auto;
+  text-align: center;
+}
+
+img.Logo {
+  padding-top: 15vw;
+  padding-bottom: 5vw;
+  width: 70vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -99,10 +137,11 @@ pre.Body {font-family: "Noto Sans KR"; font-weight: 150; font-size:3.7vmin; padd
 <body>
 
 <div class="main" id="MainPage">
-  <pre class="Thicc">SGCC Logo</pre>
-  <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#Page1">Click Me to Smooth Scroll to Section 2 Below</a>
-  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+  <img class="Logo" src="https://raw.githubusercontent.com/charlielee206/HTMLTest/main/Images/logo.png" alt="SGCC_Logo">
+  <div class="Centre">
+    <p class="Smol">Since 1982</p>
+    </div>
+  <button onclick="window.location.href='https://www.google.com';" class="RoundButton">동아리 가입 폼 바로가기 ></button>
 </div>
 
 <div class="main" id="Page1">
