@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
+  <!-- Fuck seperate stylesheets we raw doggin this with one(1) file boys -->
+  <!-- Also FUCK javascript all my homies HATE javascript -->
 <style>
 
 body {
@@ -21,18 +23,17 @@ html {
   margin-left: 0; padding: 0;
 }
 
+pre.Thicc {font-family: "Noto Sans KR"; font-weight: 450; font-size:6.5vmin; padding-top: 15vmin; margin-top: 0; padding-bottom: 3vmin; margin-bottom: 0; color: rgb(255,255,255);}
+pre.Thin {font-family: "Noto Sans KR"; font-weight: 300; font-size:4vmin; padding-top: 0; margin-top: 0; padding-bottom: 0; margin-bottom: 0; color: rgb(255,255,255);}
+pre.Body {font-family: "Noto Sans KR"; font-weight: 150; font-size:3.5vmin; padding-top: 0; margin-top: 0; color: rgb(240,240,240);}
 
-
-pre.Thicc {font-family: "Noto Sans KR"; font-weight: 400; font-size:7vw; padding-top: 0; margin-top: 0; padding-bottom: 0; margin-bottom: 0; color: rgb(255,255,255);}
-pre.Thin {font-family: "Noto Sans KR"; font-weight: 200; font-size:5vw; padding-top: 0; margin-top: 0; padding-bottom: 0; margin-bottom: 0; color: rgb(255,255,255);}
-pre.Body {font-family: "Noto Sans KR"; font-weight: 100; font-size:3.5vw; padding-top: 0; margin-top: 0; color: rgb(240,240,240);}
-
+/************ Background Styling ************/
 
 #MainPage {
   scroll-snap-align: start;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(180deg, black 0%, #1E1E1E 57%, black 100%);
+  background: linear-gradient(180deg, black 0%, #080808 57%, black 100%);
   line-height: 1.5;
   font-family: "Noto Sans KR";
   margin: 0; padding: 0;
@@ -43,7 +44,7 @@ pre.Body {font-family: "Noto Sans KR"; font-weight: 100; font-size:3.5vw; paddin
   scroll-snap-align: start;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(180deg, black 0%, #242433 20%, #050518 36%);
+  background: linear-gradient(180deg, black 0%, #242433 10%, #050518 28%);
   margin: 0; padding: 0;
 }
 
@@ -52,7 +53,7 @@ pre.Body {font-family: "Noto Sans KR"; font-weight: 100; font-size:3.5vw; paddin
   scroll-snap-align: start;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(180deg, #050518 0%, #252C30 16%, #060920 59%);
+  background: linear-gradient(180deg, #050518 0%, #252C30 10%, #060920 39%);
   margin: 0; padding: 0;
 }
 
@@ -60,9 +61,37 @@ pre.Body {font-family: "Noto Sans KR"; font-weight: 100; font-size:3.5vw; paddin
   scroll-snap-align: start;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(180deg, #060920 0%, #313931 17%, #000C06 37%);
+  background: linear-gradient(180deg, #060920 0%, #313931 8%, #000C06 27%);
   margin: 0; padding: 0;
 }
+
+#Page4 {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #000C06 0%, #393030 10%, #150707 25%);
+  margin: 0; padding: 0;
+}
+
+/************ Element Styling ************/
+
+.TextButton {
+  background-color: #ffffff00;
+  border: none;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Noto Sans KR"; 
+  font-weight: 450; 
+  font-size:4.5vmin;
+  cursor: pointer;
+  position: relative;
+  left: 15vw;
+  top: 12vmin;
+}
+
 
 
 </style>
@@ -78,8 +107,6 @@ pre.Body {font-family: "Noto Sans KR"; font-weight: 100; font-size:3.5vw; paddin
 
 <div class="main" id="Page1">
   <pre class="Thicc">
-    
-    
     실력에 상관없이 누구나.</pre>
 
   <pre class="Thin">
@@ -90,24 +117,76 @@ pre.Body {font-family: "Noto Sans KR"; font-weight: 100; font-size:3.5vw; paddin
   <pre class="Body">
           초보자를 위한 C, Python 강의는 학과나 실력과는 
           상관 없이 누구나 들을 수 있습니다.
- 
+  
           진행하고 싶은 프로젝트가 있다면 동아리를 통해
           사람을 모을 수 있고, 임원진의 심사를 거쳐 애셋 및 
           부품등의 프로젝트 지원도 가능합니다.</pre>
 
-  <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a>
+  
 </div>
 
 <div class="main" id="Page2">
-  <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a>
+  <pre class="Thicc">
+    나만의 게임을 만들어보아요.</pre>
+
+  <pre class="Thin">
+        내가 원하는 대로.
+        멘토의 도움의 받아 나만의 게임을 만들어요.
+        현업자 선배님들의 피드백도 받을 수 있어요. 
+  </pre>
+
+  <pre class="Body">
+          동아리에서 희망자를 받아 같이 인디게임을 제작하는
+          활동을 합니다. 또한 게임업계에 계시는 선배님들의
+          조언을 받을수도 있어요.</pre>
+  <!-- <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a> -->
 </div>
 
 
 <div class="main" id="Page3">
-  <a href="#MainPage">Click Me to Smooth Scroll to Section 1 Above</a>
+  <pre class="Thicc">
+    궁금한건 바로바로.</pre>
+
+  <pre class="Thin">
+        질문이 있으면 바로 물어보세요. 
+        각 분야의 전문가 선배님들께서 답변해주십니다. 
+  </pre>
+
+  <pre class="Body">
+          프로그래밍, 코딩부터 수강신청과 진로 관련 질문까지.
+          동아리 디스코드에 질문을 남겨주시면 학부생부터 
+          졸업생, 대학원생, 석사, 박사, 현업자 분들까지. 
+          동아리 선배님들께서 질문에 답변을 해드립니다.
+          
+          부담이 된다면 동아리 소속만 있는 카카오톡 방이나
+          직접 동아리방에 찾아오셔서 질문을 하셔도 됩니다.</pre>
+</div>
+
+<div class="main" id="Page4">
+  <pre class="Thicc">
+    코딩, 포기하지 말아요.</pre>
+
+  <pre class="Thin">
+        필수가 된 코딩. 
+        SGCC가 여러분을 도와드리겠습니다. 
+  </pre>
+
+  <pre class="Body">
+          AI, 빅데이터, 4차 산업혁명이 주요 키워드로 떠오르고 
+          있는 지금, 코딩은 더 이상 전공자들의 전유물이 아니게
+          되었습니다. 비전공자들에게도 ‘코딩’의 중요성은
+          점차 대두되고 있으며 코딩은 더 이상 선택이 아닌
+          필수가 되고 있습니다. 
+          
+          그럼에도 코딩을 독학하는 과정에서 어려움을 느껴
+          포기하시는 분들이 매우 많습니다.
+          
+          이제는 걱정하지 마세요. 
+          SGCC가 여러분들을 도와드리겠습니다!</pre>
+
+        <button onclick="window.location.href='https://www.google.com';" class="TextButton">동아리 가입 폼 바로가기 ></button>
 </div>
 
 
 </body>
 </html>
-
