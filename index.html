@@ -173,6 +173,56 @@ img.Logo {
   100%{background: url('Images/1.png'); background-size: 100% 100%;}
 }
 
+.scroll-parent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:12vw;
+  position: relative;
+  width: 80vw;
+  height: 47.8vw;
+  background: rgb(0,0,0);
+  border-radius: 3vw;
+  border-style: solid;
+  border-color:rgb(82, 82, 82);
+  overflow-x: hidden;
+  overflow-y: hidden;  
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 1.6%;
+  top: 0%;
+}
+
+.primary {
+  animation: primary 15s linear infinite;
+}
+
+.secondary {
+  animation: secondary 15s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    top: 0%;
+  }
+  to {
+    top: -675%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    top: 675%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
 
 </style>
 </head>
@@ -203,7 +253,12 @@ img.Logo {
           진행하고 싶은 프로젝트가 있다면 동아리를 통해
           사람을 모을 수 있고, 임원진의 심사를 거쳐 애셋 및 
           부품등의 프로젝트 지원도 가능합니다.</pre>
-    
+
+          
+   
+   <!--
+   <img src="Images/QnA.jpg" style="width: 80vw; display: block; margin-top:10vw; margin-left: auto;  margin-right: auto;"></img> 
+   -->
   
 </div>
 
@@ -245,6 +300,27 @@ img.Logo {
           
           부담이 된다면 동아리 소속만 있는 카카오톡 방이나
           직접 동아리방에 찾아오셔서 질문을 하셔도 됩니다.</pre>
+
+          <div class="scroll-parent">
+            <div class="scroll-element primary">
+              <img src="Images/QnA/1.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/2.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/3.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/4.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/5.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/6.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/7.png" style="width: 77vw;"></img>
+            </div>
+            <div class="scroll-element secondary">
+              <img src="Images/QnA/1.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/2.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/3.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/4.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/5.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/6.png" style="width: 77vw;"></img>
+              <img src="Images/QnA/7.png" style="width: 77vw;"></img>
+            </div>
+          </div>
 </div>
 
 <div class="main" id="Page4">
